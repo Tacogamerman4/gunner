@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunner Comics</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: linear-gradient(180deg, #00b4d8, #0077b6, #023e8a);
+        }
+
+        header {
+            background: rgba(0, 123, 167, 0.8);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d8f3dc;
+        }
+
+        .nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #caf0f8;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #90e0ef;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .product {
+            background: #48cae4;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .product p {
+            font-size: 1rem;
+            margin: 0 1rem 1rem;
+        }
+
+        .product button {
+            background: #0077b6;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            transition: background 0.3s;
+        }
+
+        .product button:hover {
+            background: #023e8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Gunner Comics</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Gunner Comics</h1>
+        <p>My name is Gunner, I make comics. You can buy them below:</p>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/300x400" alt="Comic 1">
+            <h3>Skibidi ball man</h3>
+            <p>Description</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x400" alt="Comic 2">
+            <h3>Penis</h3>
+            <p>Description</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x400" alt="Comic 3">
+            <h3>Idk </h3>
+            <p>Description</p>
+            <button>Buy Now</button>
+        </div>
+    </section>
+<div style="position: fixed; bottom: 10px; left: 10px; color: white; font-size: 12px;">
+    Website by Dorian Welch
+</div>
+
+
+</body>
+</html>
